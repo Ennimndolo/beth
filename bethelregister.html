@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="Viewpoint" content="width=device-width, initial-scale=1.0">
+  <title>BIA Register</title>
+  <link rel="stylesheet" href="register.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/base.css"> -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+  <!-- script
+  ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- favicons
+  ================================================== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script src="./uccrregister.js"></script>
+  <script>
+    function validateUsername() {
+      var username = document.getElementById("fullName").value;
+      var regex = /^[a-zA-Z0-9]-[a-zA-Z]+$/;
+      if (regex.test(fullName)) {
+        return true;
+      } else {
+        alert("Invalid username address! Username must start with letters or digits followed by two digits, a hyphen, and then the program code, all ending with '@mubas.ac.mw'.");
+        return false;
+      }
+    }
+
+    function validateEmail() {
+      var email = document.getElementById("phonenumber").value;
+      var regex = /^[+265]+[0-9]{9}+$/;
+      if (regex.test(phonenumber)) {
+        return true;
+      } else {
+        alert("Invalid email address! Please enter a valid email address in the format: yourusername@mubas.ac.mw");
+        return false;
+      }
+    }
+
+    function validateForm() {
+      return validateUsername() && validateEmail();
+    }
+  </script>
+  <style>
+ 
+   
+  </style>
+</head>
+<body id="top">
+ 
+    
+  <div id="wrapper">
+    <div class="top">
+    <a href="index.html" class="arrow"> <div class="arrow"><img src="./svgs/brands/arrow.jpg" alt="back" class="arrow"></div></a>
+  
+   <div class="logo-section">
+    <img src="./image/about/images (1).jpeg" id="logo" alt="logo" style="">
+  </div>
+</div>
+  <div class="container">
+    <div class="header">
+    <span class="log">
+     <a href="index.html"> <img src="./image/about/images (1).jpeg" class="log-img" alt="logo"></a>
+    </span>
+    <h2 style=" color: steelblue;  text-align: center; border-radius: 1em;">
+     BETHEL INTERNATIONAL ASSEMBLY (BIA) <br>
+     Online Membership Registration Form
+    </h2>
+
+    <h2 class="mobile-h2">
+      BIA<br>
+      Membership Registration Form
+     </h2>
+    </div>
+    <form action="register.php" method="post" onsubmit="return validateForm()">
+   
+      <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter fullName" required>
+      <div class="Gender"> <span id="gender_title" name="gender">
+          Gender
+        </span>
+
+        <input type="radio" class="gender" name="gender" value="male" required>Male
+
+        <input type="radio" class="gender" name="gender" value="female" required>Female
+      </div>
+      <input type="text" class="form-control" id="phonenumber" placeholder="Enter phone number" name="phonenumber"
+        required>
+        <div class="input-group" style="display: flex; 
+        flex-direction: row; justify-content: center; align-items: center; column-gap: 1em;">
+          <label style="color: #000;">Homecell</label>
+          <select name="homecell" required style="width: 100%; height: 3em;">
+            <option value="Canan 1" name="Canan 1">Canan 1</option>
+            <option value="Canan 2" name="Canan 2">Canan 2</option>
+            <option value="Beleya" name="Beleya">Beleya</option>
+            <option value="Judea" name="Judea">Judea</option>
+            <option value="Cana" name="Cana">Cana</option>
+            <option value="Jerusalem" name="Jerusalem">Jerusalem</option>
+            <option value="New lines" name="New lines">New Lines</option>
+            <option value="Antyokea" name="Antyokea">Antyokea</option>
+          </select>
+        </div>
+        <span class="footer">
+        
+       <input type="submit" value="Register" name="submit" class="submit" style="width: 4em;">
+       <button type="reset" class="submit" style="width: 4em;">Clear</button>
+
+      </span>
+    </form>
+  </div>
+  </div>
+  
+ </body>
+
+</html>
