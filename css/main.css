@@ -3104,15 +3104,15 @@ border-bottom: 2px solid steelblue;
 }
 
 .social-list__icon--twitter::before {
-    background-image: url(../svgs/brands/twitter.svg);
+    background-image: url(../svgs/brands/twitter.png);
 }
 
 .social-list__icon--instagram::before {
-    background-image: url(../svgs/brands/facebook.svg);
+    background-image: url(../svgs/brands/instagram.png);
 }
 
 .social-list__icon--email::before {
-    background-image: url(../svgs/brands/facebook.svg);
+    background-image: url(../svgs/brands/email.jpeg);
 }
 
 /* ------------------------------------------------------------------- 
