@@ -3100,19 +3100,19 @@ border-bottom: 2px solid steelblue;
 }
 
 .social-list__icon--facebook::before {
-  background-image: url(../images/icons/social/icon-facebook.svg);
+  background-image: url(../svgs/brands/facebook.svg);
 }
 
 .social-list__icon--twitter::before {
-  background-image: url(../images/icons/social/icon-twitter.svg);
+    background-image: url(../svgs/brands/twitter.svg);
 }
 
 .social-list__icon--instagram::before {
-  background-image: url(../images/icons/social/icon-instagram.svg);
+    background-image: url(../svgs/brands/facebook.svg);
 }
 
 .social-list__icon--email::before {
-  background-image: url(../images/icons/social/icon-email.svg);
+    background-image: url(../svgs/brands/facebook.svg);
 }
 
 /* ------------------------------------------------------------------- 
