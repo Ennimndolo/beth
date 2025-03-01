@@ -3107,7 +3107,7 @@ border-bottom: 2px solid steelblue;
     background-image: url(../svgs/brands/twitter.png);
 }
 
-.social-list__icon--instagram::before {
+.social-list__icon--instagram::before {ssss
     background-image: url(../svgs/brands/instagram.png);
 }
 
